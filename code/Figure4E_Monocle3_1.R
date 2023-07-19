@@ -39,7 +39,7 @@ co = merge(co,celltype,by.x='order',by.y='celltype',sort=F)
 cor = co$Color
 names(cor) = co$order
 
-### Monocle2
+### Monocle3
 cds <- as.cell_data_set(obj)
 cds <- cluster_cells(cds = cds, reduction_method = "UMAP")
 cds <- learn_graph(cds, use_partition = TRUE)
